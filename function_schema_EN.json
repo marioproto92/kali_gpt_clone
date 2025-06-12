@@ -1,0 +1,84 @@
+{
+  "functions": [
+    {
+      "name": "ScriptExplain",
+      "description": "Explains a script line by line, highlighting security, purpose, and syntax.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "script_text": {
+            "type": "string",
+            "description": "The code to be analyzed, such as a bash or PowerShell script."
+          },
+          "language": {
+            "type": "string",
+            "enum": [
+              "bash",
+              "python",
+              "powershell",
+              "perl",
+              "other"
+            ],
+            "description": "The scripting language used in the script."
+          }
+        },
+        "required": [
+          "script_text",
+          "language"
+        ]
+      }
+    },
+    {
+      "name": "ToolUsage",
+      "description": "Provides an example usage of a Kali Linux tool with command, output, and explanation.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "tool_name": {
+            "type": "string",
+            "description": "The name of the tool, e.g., nmap, sqlmap, hydra..."
+          },
+          "mode": {
+            "type": "string",
+            "enum": [
+              "basic",
+              "advanced"
+            ],
+            "description": "Command level: basic or advanced."
+          }
+        },
+        "required": [
+          "tool_name"
+        ]
+      }
+    },
+    {
+      "name": "LabSim",
+      "description": "Simulates a lab phase of attack or defense, with guidance and suggested tools.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "objective": {
+            "type": "string",
+            "description": "The simulated objective, such as 'vulnerable web server' or 'AD controller'."
+          },
+          "phase": {
+            "type": "string",
+            "enum": [
+              "recon",
+              "exploit",
+              "post",
+              "defense",
+              "report"
+            ],
+            "description": "The phase of the kill chain or red/blue team simulation."
+          }
+        },
+        "required": [
+          "objective",
+          "phase"
+        ]
+      }
+    }
+  ]
+}
