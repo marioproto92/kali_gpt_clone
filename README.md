@@ -15,6 +15,28 @@ It integrates:
 
 ---
 
+## 3. Knowledge Base
+
+PDF and DOCX files used by Kali GPT for reasoning and responses:
+
+| File Name                                                               | SHA256 Hash                                                                                         |
+|-------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| Advanced Security Testing with Kali Linux.pdf                           | `ad77c9e99e103f7e41a0d66b5153f1c72cf67e4109e00809b2a8bf91fc2f58c3`                                   |
+| Knowledge File Kali Linux Repositories.docx                             | `6cbaeaccb40ea7d3abf5a776e2d0455d4f99fc8a5de3392fe7b6fe61703e3c31`                                   |
+| Kali Linux Knowledge File - Software - December 2024 Updates.docx       | `3050af64ada2dcf66ea8ae2f6056982f56cb954ecd777faca40ceaa016438053`                                   |
+
+> **Integrity Check:** Verify file authenticity by comparing SHA256 hashes.
+
+---
+
+## 🐉 Prompt for Automatic Verification via Kali GPT
+
+To verify the files using Kali GPT, use this prompt:
+
+![image](https://github.com/user-attachments/assets/bfb77e79-9302-4b59-b3b3-e5760c89f5ae)
+
+---
+
 ## 📂 Included Files
 
 ### 🔹 Prompt
